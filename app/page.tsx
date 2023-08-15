@@ -1,4 +1,14 @@
-/** Add your relevant code here for the issue to reproduce */
+'use client'
+
 export default function Home() {
-  return null
+  const c = new Test()
+  c.test()
+  return <div />
+}
+
+class Test
+{
+  test() {
+    console.log(this?.some)
+  }
 }
